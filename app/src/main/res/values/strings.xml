@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyNDKProject</string>
+    <string name="suma">SUMA</string>
+    <string name="liczba_i">Liczba I</string>
+    <string name="adding_numbers">ADDING NUMBERS</string>
+    <string name="liczba_ii">Liczba II</string>
+</resources>

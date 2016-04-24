@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pl.edu.wat.student.myndkproject.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adding_numbers"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/liczba_i"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/firstnum"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/liczba_ii"
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/secondnum"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suma"
+        android:id="@+id/sumButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="onSumButtonClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/wynik"
+        android:layout_below="@+id/sumButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:textSize="60sp" />
+
+
+</RelativeLayout>
